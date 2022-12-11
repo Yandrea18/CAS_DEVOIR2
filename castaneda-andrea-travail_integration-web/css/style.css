@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main{
+    width: 100%;
+}
+
+.contenedor1{
+    width: 100%;
+    height:auto;
+    background:linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(../images/netflix-background-9-900x506.jpg);
+}
+   
+.entete{
+width: 100%;
+height: 100px;
+display: flex;
+}
+.logo{
+    width:15% ;
+    align-items: center;
+    padding: 35px;
+}
+.navigateur{
+    width: 60%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.reseauxLogin{
+    width: 25%;
+    justify-content:space-around;
+    display: flex;
+    padding: 35px;
+    font-size: 23px;
+
+
+}
+.reseauxLogin img:hover{
+    transform: scale(1.3);
+}
+.linkN{
+    color: white;
+    padding:2px 2px;
+    font-size: 23px;
+   background-color: rgb(177, 14, 14);
+   text-decoration: none;
+   border-radius: 10px;
+}
+.linkL{
+    color: white;
+    padding:2px 2px;
+    font-size: 23px;
+    text-decoration: none;
+}
+.linkN:hover{
+    color: white;
+    background-color: red;
+
+}
+.mServices{
+    width: 50%;
+    margin-top: 4%;
+    display: flex;
+    justify-content:space-around;
+    align-items:flex-start; 
+    margin-left:25%;
+    margin-bottom: 270px;
+}
+#Vetements{
+    padding-bottom:50px;
+    background:linear-gradient(rgba(241, 244, 250, 0.363),rgba(241, 244, 250, 0.363));
+    border-radius: 10px;
+    text-align: center;
+      
+}
+
+#Streaming{
+    padding-bottom: 50px;
+    background:linear-gradient(rgba(241, 244, 250, 0.363),rgba(241, 244, 250, 0.363));
+    border-radius: 10px;
+    text-align: center;
+}
+div > h1{
+    padding: 15px;
+}
+#lineDecorative{
+    border-top: 2px solid red;
+    height: 70px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 30px;
+   
+}
+.bottonIndex{
+    width:150px;
+    height: 30px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin-left:30%;
+    margin-top: 10%;
+   
+}
+.bottonIndex p{
+    text-align: center;
+    line-height:1.6em;
+    color: black;
+}
+/*Login*/
+
+.boxFormulaire{
+    margin-left: 25%;
+    margin-top: 100px;
+    margin-bottom: 220px;;
+    max-width: 1200px;
+    width:100%;
+    display: flex;
+}
+.imagenFormulaire{
+background-image:url(../images/tactil.jpg);
+background-position: center center;
+background-size: cover;
+flex: 0 0 calc(50%);
+}
+
+.formulaire{
+    padding: 50px;
+    background-color: rgba(165, 163, 167, 0.438);
+}
+.texteFormulaire, h2, .input, label, cleOubliee, a, p{
+    color: white;
+}
+.texteFormulaire, h2{
+    font-size: 30px;
+    text-align: center;
+}
+.texteFormulaire p{
+   font-size: 50px ; 
+   text-align: center;
+}
+.input label{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+
+
+}
+.input input{
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 5px;
+    outline: none;
+}
+#bottonSumbit{
+    width:60%;
+    height: 30px;
+    background-color: rgba(241, 243, 245, 0.781);
+    border-radius: 5px;
+    text-align: center;
+    line-height:1.7em;
+    color: black;
+    border-style: none;
+    margin-top: 20px;
+    margin-left: 20%;
+}
+#bottonSumbit:hover{
+    cursor: pointer;
+    background-color: rgb(221, 231, 250);
+}
+.cleOubliee a{
+    display: inline-block;
+    margin-top: 10px;
+}
+img{
+    max-width: 100%;
+}
+
+/*PRODUCTOS*/
+.containerItems{
+    display:grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+    width: 50%;
+    margin-left:25% ;    
+     
+}
+.item{
+border-radius: 10px;
+}
+.item:hover{
+    box-shadow: 0 10px 20px white; 
+}
+.infoProduit{
+    padding: 15px 30px;
+}
+.produits h2{
+    text-align: left;
+    margin-left: 25%;
+    font-size: 20px;
+}
+h1{
+    color:white;
+    text-align: center;
+}
+.infoProduit h3{
+    color:white;
+    text-align: left; 
+}
+.item img{
+    width: 100%;
+    height:350px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0 ;
+    transition: all .5s;
+}
+.item figure{
+    overflow: hidden;
+}
+.item:hover img{
+    transform: scale(1.2);
+}
+.prix{
+    font-weight: 900;
+}
+.infoProduit button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+/*FILM*/
+.containerFilms{
+    display:grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+    width: 80%;
+    margin-left:10% ;    
+     
+}
+.infoFilm{
+    padding: 15px 30px;
+}
+.desc{
+    color:white;
+    text-align:justify; 
+    font-size:12px ;
+}
+.streaming h2{
+    text-align: left;
+    margin-left: 10%;
+    font-size: 20px;
+}
+/*Nous Joindre*/
+.boxNousJoindre{
+    margin-left: 20%;
+    margin-top: 100px;
+    margin-bottom: 220px;;
+    max-width: 1200px;
+    width: 95%;
+    display: flex;
+}
+.nosDonnées{
+    background-color: black;
+    background-position: center center;
+    background-size: cover;
+    flex: 0 0 calc(30%);
+    color: aliceblue;
+     padding-top: 50px;
+    }
+    
+.nousJoindre{
+    padding: 50px;
+    background-color: rgba(165, 163, 167, 0.438);
+    flex: 0 0 calc(60%);
+ }
+#list{
+    list-style-type: none;
+    line-height: 40px;
+    
+}
+#texMessage{
+    width:100%; 
+}
+.nousJoindre h2{
+    padding-bottom: 30px;
+}
+.nosDonnées h2{
+    padding-bottom: 25px;
+    text-align: center;
+}
+.nosDonnées li{
+    margin-left: 30px;
+}
